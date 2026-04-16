@@ -2,7 +2,7 @@
 
 ![PandaControl Logo](https://github.com/DouglasScarello/pandasomcontrolsom/raw/main/PandaControl_Release/icon.png)
 
-O **PandaControl** é um controlador de áudio desktop premium e divertido, desenvolvido especialmente para resolver o problema de reguladores de som físicos quebrados com estilo e fofura.
+O **PandaControl** é um controlador de áudio desktop premium e divertido, desenvolvido especialmente para resolver o problema de reguladores de som físicos quebrados da **Caixa de Som Panda da Imaginarium** com estilo e fofura.
 
 ## ✨ Funcionalidades
 

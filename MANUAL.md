@@ -1,6 +1,6 @@
 # 🐼 Panda Audio - Manual do Usuário
 
-Bem-vindo ao **Panda Audio Control**, o aplicativo definitivo para gerenciar o volume da sua caixa de som Panda (e qualquer outro dispositivo) com uma interface premium e divertida.
+Bem-vindo ao **Panda Audio Control**, o aplicativo definitivo para gerenciar o volume da sua caixa de som **Panda Imaginarium** (e qualquer outro dispositivo) com uma interface premium e divertida.
 
 ## 🚀 Instalação e Uso
 
