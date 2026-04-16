@@ -4,6 +4,14 @@
 
 O **PandaControl** é um controlador de áudio desktop premium e divertido, desenvolvido especialmente para resolver o problema de reguladores de som físicos quebrados da **Caixa de Som Panda da Imaginarium** com estilo e fofura.
 
+## 📸 Hardware Real vs Interface Digital
+
+Para manter a essência do design original, a interface foi inspirada diretamente na famosa caixa de som da Imaginarium:
+
+| **Hardware Original** | **Interface PandaControl** |
+| :---: | :---: |
+| ![Panda Imaginarium](https://github.com/DouglasScarello/pandasomcontrolsom/raw/main/panda_real.jpg) | ![PandaControl UI](https://github.com/DouglasScarello/pandasomcontrolsom/raw/main/PandaControl_Release/icon.png) |
+
 ## ✨ Funcionalidades
 
 - 🎨 **Design Glassmorphism**: Interface moderna e transparente.
