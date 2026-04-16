@@ -1,0 +1,21 @@
+🐼 PandaControl - Controle de Volume Premium
+
+Este aplicativo permite que você controle o volume do seu computador com o rosto de um Panda super fofo! 
+
+--- COMO INSTALAR E USAR ---
+
+É muito simples, basta seguir estes dois passos:
+
+1. Clique com o botão direito no arquivo "install.sh" e escolha "Executar" 
+   (Ou abra um terminal na pasta e digite: ./install.sh)
+
+2. Pronto! Agora abra o menu de aplicativos do seu computador e procure por "PandaControl".
+
+--- O QUE TEM NESSA PASTA? ---
+
+- PandaControl-1.0.0.AppImage: O programa em si.
+- install.sh: O "instalador" que cria o atalho no seu menu de aplicativos.
+
+Dica: Se o volume passar de 100%, o Panda ficará com o anel vermelho (Modo Turbo)!
+
+Aproveite seu Panda! 🐼🔊

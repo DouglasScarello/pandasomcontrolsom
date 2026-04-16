@@ -1,0 +1,204 @@
+:root {
+  --panda-black: #0f172a;
+  --panda-white: #f8fafc;
+  --panda-green: #22c55e;
+  --panda-green-glow: rgba(34, 197, 94, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--panda-black);
+  color: var(--panda-white);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(34, 197, 94, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.05) 0%, transparent 40%);
+  overflow: hidden;
+}
+
+.glass-card {
+  -webkit-app-region: drag;
+  /* Permite arrastar a janela */
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 40px;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  cursor: grab;
+}
+
+.controls button,
+.footer-controls button {
+  -webkit-app-region: no-drag;
+  /* Botões não devem ser arrastáveis */
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.panda-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-ring {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 4px solid var(--glass-border);
+}
+
+.volume-progress {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 4px solid var(--panda-green);
+  clip-path: polygon(50% 50%, 50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 10px var(--panda-green-glow));
+}
+
+.panda-face {
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.panda-face .eye {
+  width: 30px;
+  height: 40px;
+  background: #000;
+  border-radius: 50%;
+  margin: 0 15px;
+  position: relative;
+}
+
+.panda-face .eye::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+
+.ears {
+  position: absolute;
+  top: -20px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ear {
+  width: 60px;
+  height: 60px;
+  background: #000;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-controls {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-btn {
+  font-size: 0.7rem;
+  padding: 8px 15px !important;
+  opacity: 0.5;
+  border-radius: 12px !important;
+}
+
+.icon-btn:hover {
+  opacity: 1;
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+
+button {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: var(--panda-green);
+  border-color: var(--panda-green);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px var(--panda-green-glow);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.volume-text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  border-radius: 50px;
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--panda-green);
+  border: 1px solid var(--panda-green-glow);
+}
